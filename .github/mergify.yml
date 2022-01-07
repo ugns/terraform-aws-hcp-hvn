@@ -3,7 +3,7 @@
 pull_request_rules:
 - name: "approve automated PRs that have passed checks"
   conditions:
-  - "author~=^(cloudpossebot|renovate\\[bot\\])$"
+  - "author~=^(undergridbot|renovate\\[bot\\])$"
   - "base=master"
   - "-closed"
   - "head~=^(auto-update|renovate)/.*"
@@ -14,12 +14,12 @@ pull_request_rules:
   actions:
     review:
       type: "APPROVE"
-      bot_account: "cloudposse-mergebot"
+      bot_account: "undergrid-mergebot"
       message: "We've automatically approved this PR because the checks from the automated Pull Request have passed."
 
 - name: "merge automated PRs when approved and tests pass"
   conditions:
-  - "author~=^(cloudpossebot|renovate\\[bot\\])$"
+  - "author~=^(undergridbot|renovate\\[bot\\])$"
   - "base=master"
   - "-closed"
   - "head~=^(auto-update|renovate)/.*"

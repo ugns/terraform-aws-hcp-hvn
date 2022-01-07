@@ -19,7 +19,7 @@ copyrights:
   year: "2021"
 
 # Canonical GitHub repo
-github_repo: "UGNS/terraform-aws-hcp-hvn"
+github_repo: "ugns/terraform-aws-hcp-hvn"
 
 # Badges to display
 badges:
@@ -29,17 +29,28 @@ badges:
 
 # List any related terraform modules that this module may be used with or that this module depends on.
 related:
-- name: "terraform-null-label"
-  description: "Terraform module designed to generate consistent names and tags for resources. Use terraform-null-label to implement a strict naming convention."
-  url: "https://github.com/cloudposse/terraform-null-label"
+- name: "terraform-hcp-hvn-peering-connection"
+  description: "Terraform module designed to generate Hashicorp Cloud Platform Hashicorp Virtual Network connection using a peering connection."
+  url: "https://github.com/ugns/terraform-hcp-hvn-peering-connection"
+- name: "terraform-hcp-hvn-transit-gateway"
+  description: "Terraform module designed to generate Hashicorp Cloud Platform Hashicorp Virtual Network connection using a transit gateway."
+  url: "https://github.com/ugns/terraform-hcp-hvn-transit-gateway"
+- name: "terraform-hcp-hvn-route"
+  description: "Terraform module designed to generate Hashicorp Cloud Platform Hashicorp Virtual Network route back to through link to your AWS VPC."
+  url: "https://github.com/ugns/terraform-hcp-hvn-route"
 
 # List any resources helpful for someone to get started. For example, link to the hashicorp documentation or AWS documentation.
 references:
+- name: "hashicorp-amazon-peering-hcp"
+  description: "Peering an AWS VPC with HashiCorp Cloud Platform (HCP)."
+  url: "https://learn.hashicorp.com/tutorials/cloud/amazon-peering-hcp?in=cloud/consul-cloud"
+- name: "terraform-provider-hcp"
+  description: "Terraform provider for HashiCorp Cloud Platform."
+  url: "https://github.com/hashicorp/terraform-provider-hcp"
 
 # Short description of this project
 description: |-
-  Short
-  description
+  Terraform module to define a consistent Hashicorp Cloud Platform Hashicorp Virtual Network in AWS.
 
 # Introduction to the project
 introduction: |-
@@ -64,11 +75,10 @@ usage: |-
   }
 
   module "example" {
-    source  = "cloudposse/*****/aws"
-    # Cloud Posse recommends pinning every module to a specific version
+    source  = "ugns/hcp-hvn/aws"
     # version = "x.x.x"
 
-    example = "Hello world!"
+    hvn_region = "us-east-1"
 
     context = module.label.this
   }
@@ -77,7 +87,7 @@ usage: |-
 # Example usage
 examples: |-
   Here is an example of using this module:
-  - [`examples/complete`](https://github.com/cloudposse/terraform-example-module/) - complete example of using this module
+  - [`examples/complete`](https://github.com/ugns/terraform-aws-hcp-hvn) - complete example of using this module
 
 # How to get started quickly
 quickstart: |-

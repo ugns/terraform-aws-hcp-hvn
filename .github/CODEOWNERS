@@ -8,6 +8,7 @@
 
 # Cloud Posse must review any changes to Makefiles
 **/Makefile   @ugns/engineering
+**/Makefile.* @ugns/engineering
 
 # Cloud Posse must review any changes to GitHub actions
 .github/*     @ugns/engineering

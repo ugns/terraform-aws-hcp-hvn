@@ -26,8 +26,7 @@
 
 -->
 
-Short
-description
+Terraform module to define a consistent Hashicorp Cloud Platform Hashicorp Virtual Network in AWS.
 
 ---
 
@@ -71,16 +70,16 @@ Security scanning provided by Bridgecrew. Bridgecrew is the leading fully hosted
 
 | Benchmark | Description |
 |--------|---------------|
-| [![Infrastructure Security](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=INFRASTRUCTURE+SECURITY) | Infrastructure Security Compliance |
-| [![CIS KUBERNETES](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/cis_kubernetes)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=CIS+KUBERNETES+V1.5) | Center for Internet Security, KUBERNETES Compliance |
-| [![CIS AWS](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=CIS+AWS+V1.2) | Center for Internet Security, AWS Compliance |
-| [![CIS AZURE](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/cis_azure)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=CIS+AZURE+V1.1) | Center for Internet Security, AZURE Compliance |
-| [![PCI-DSS](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/pci)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=PCI-DSS+V3.2) | Payment Card Industry Data Security Standards Compliance |
-| [![NIST-800-53](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/nist)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=NIST-800-53) | National Institute of Standards and Technology Compliance |
-| [![ISO27001](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/iso)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=ISO27001) | Information Security Management System, ISO/IEC 27001 Compliance |
-| [![SOC2](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/soc2)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=SOC2)| Service Organization Control 2 Compliance |
-| [![CIS GCP](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/cis_gcp)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=CIS+GCP+V1.1) | Center for Internet Security, GCP Compliance |
-| [![HIPAA](https://www.bridgecrew.cloud/badges/github/UGNS/terraform-aws-hcp-hvn/hipaa)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=UGNS%2Fterraform-aws-hcp-hvn&benchmark=HIPAA) | Health Insurance Portability and Accountability Compliance |
+| [![Infrastructure Security](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=INFRASTRUCTURE+SECURITY) | Infrastructure Security Compliance |
+| [![CIS KUBERNETES](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/cis_kubernetes)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=CIS+KUBERNETES+V1.5) | Center for Internet Security, KUBERNETES Compliance |
+| [![CIS AWS](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=CIS+AWS+V1.2) | Center for Internet Security, AWS Compliance |
+| [![CIS AZURE](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/cis_azure)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=CIS+AZURE+V1.1) | Center for Internet Security, AZURE Compliance |
+| [![PCI-DSS](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/pci)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=PCI-DSS+V3.2) | Payment Card Industry Data Security Standards Compliance |
+| [![NIST-800-53](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/nist)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=NIST-800-53) | National Institute of Standards and Technology Compliance |
+| [![ISO27001](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/iso)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=ISO27001) | Information Security Management System, ISO/IEC 27001 Compliance |
+| [![SOC2](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/soc2)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=SOC2)| Service Organization Control 2 Compliance |
+| [![CIS GCP](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/cis_gcp)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=CIS+GCP+V1.1) | Center for Internet Security, GCP Compliance |
+| [![HIPAA](https://www.bridgecrew.cloud/badges/github/ugns/terraform-aws-hcp-hvn/hipaa)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=ugns%2Fterraform-aws-hcp-hvn&benchmark=HIPAA) | Health Insurance Portability and Accountability Compliance |
 
 
 
@@ -115,11 +114,10 @@ module "label" {
 }
 
 module "example" {
-  source  = "cloudposse/*****/aws"
-  # Cloud Posse recommends pinning every module to a specific version
+  source  = "ugns/hcp-hvn/aws"
   # version = "x.x.x"
 
-  example = "Hello world!"
+  hvn_region = "us-east-1"
 
   context = module.label.this
 }
@@ -133,7 +131,7 @@ Here's how to get started...
 ## Examples
 
 Here is an example of using this module:
-- [`examples/complete`](https://github.com/cloudposse/terraform-example-module/) - complete example of using this module
+- [`examples/complete`](https://github.com/ugns/terraform-aws-hcp-hvn) - complete example of using this module
 
 
 
@@ -155,38 +153,26 @@ Available targets:
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 3.70.0 |
 | <a name="requirement_hcp"></a> [hcp](#requirement\_hcp) | 0.21.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.70.0 |
 | <a name="provider_hcp"></a> [hcp](#provider\_hcp) | 0.21.1 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_label"></a> [label](#module\_label) | cloudposse/label/null | 0.25.0 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_ec2_transit_gateway_vpc_attachment_accepter.this](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter) | resource |
-| [aws_ram_principal_association.this](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/resources/ram_principal_association) | resource |
-| [aws_ram_resource_association.this](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/resources/ram_resource_association) | resource |
-| [aws_ram_resource_share.this](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/resources/ram_resource_share) | resource |
-| [aws_vpc_peering_connection_accepter.this](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/resources/vpc_peering_connection_accepter) | resource |
-| [hcp_aws_network_peering.this](https://registry.terraform.io/providers/hashicorp/hcp/0.21.1/docs/resources/aws_network_peering) | resource |
-| [hcp_aws_transit_gateway_attachment.this](https://registry.terraform.io/providers/hashicorp/hcp/0.21.1/docs/resources/aws_transit_gateway_attachment) | resource |
 | [hcp_hvn.this](https://registry.terraform.io/providers/hashicorp/hcp/0.21.1/docs/resources/hvn) | resource |
-| [hcp_hvn_route.this](https://registry.terraform.io/providers/hashicorp/hcp/0.21.1/docs/resources/hvn_route) | resource |
-| [aws_arn.peer](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/data-sources/arn) | data source |
-| [aws_ec2_transit_gateway.this](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/data-sources/ec2_transit_gateway) | data source |
-| [aws_vpc.peer](https://registry.terraform.io/providers/hashicorp/aws/3.70.0/docs/data-sources/vpc) | data source |
 
 ## Inputs
 
@@ -194,13 +180,13 @@ Available targets:
 |------|-------------|------|---------|:--------:|
 | <a name="input_additional_tag_map"></a> [additional\_tag\_map](#input\_additional\_tag\_map) | Additional key-value pairs to add to each map in `tags_as_list_of_maps`. Not added to `tags` or `id`.<br>This is for some rare cases where resources want additional configuration of tags<br>and therefore take a list of maps with tag key, value, and additional configuration. | `map(string)` | `{}` | no |
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | ID element. Additional attributes (e.g. `workers` or `cluster`) to add to `id`,<br>in the order they appear in the list. New attributes are appended to the<br>end of the list. The elements of the list are joined by the `delimiter`<br>and treated as a single ID element. | `list(string)` | `[]` | no |
-| <a name="input_connection"></a> [connection](#input\_connection) | (optional) HVN to VPC connection details | <pre>object({<br>    id            = string<br>    type          = string<br>    tgw_id        = string<br>    route_id      = string<br>    attachment_id = string<br>  })</pre> | <pre>{<br>  "attachment_id": null,<br>  "id": null,<br>  "route_id": null,<br>  "tgw_id": null,<br>  "type": null<br>}</pre> | no |
 | <a name="input_context"></a> [context](#input\_context) | Single object for setting entire context at once.<br>See description of individual variables for details.<br>Leave string and numeric variables as `null` to use default value.<br>Individual variable settings (non-null) override settings in context object,<br>except for attributes, tags, and additional\_tag\_map, which are merged. | `any` | <pre>{<br>  "additional_tag_map": {},<br>  "attributes": [],<br>  "delimiter": null,<br>  "descriptor_formats": {},<br>  "enabled": true,<br>  "environment": null,<br>  "id_length_limit": null,<br>  "label_key_case": null,<br>  "label_order": [],<br>  "label_value_case": null,<br>  "labels_as_tags": [<br>    "unset"<br>  ],<br>  "name": null,<br>  "namespace": null,<br>  "regex_replace_chars": null,<br>  "stage": null,<br>  "tags": {},<br>  "tenant": null<br>}</pre> | no |
 | <a name="input_delimiter"></a> [delimiter](#input\_delimiter) | Delimiter to be used between ID elements.<br>Defaults to `-` (hyphen). Set to `""` to use no delimiter at all. | `string` | `null` | no |
 | <a name="input_descriptor_formats"></a> [descriptor\_formats](#input\_descriptor\_formats) | Describe additional descriptors to be output in the `descriptors` output map.<br>Map of maps. Keys are names of descriptors. Values are maps of the form<br>`{<br>   format = string<br>   labels = list(string)<br>}`<br>(Type is `any` so the map values can later be enhanced to provide additional options.)<br>`format` is a Terraform format string to be passed to the `format()` function.<br>`labels` is a list of labels, in order, to pass to `format()` function.<br>Label values will be normalized before being passed to `format()` so they will be<br>identical to how they appear in `id`.<br>Default is `{}` (`descriptors` output will be empty). | `any` | `{}` | no |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Set to false to prevent the module from creating any resources | `bool` | `null` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | ID element. Usually used for region e.g. 'uw2', 'us-west-2', OR role 'prod', 'staging', 'dev', 'UAT' | `string` | `null` | no |
-| <a name="input_hvn"></a> [hvn](#input\_hvn) | (optional) Hashicorp Cloud Platform HVN details | <pre>object({<br>    id         = string<br>    region     = string<br>    cidr_block = string<br>  })</pre> | <pre>{<br>  "cidr_block": "172.25.16.0/10",<br>  "id": "hvn",<br>  "region": "us-east-1"<br>}</pre> | no |
+| <a name="input_hvn_cidr_block"></a> [hvn\_cidr\_block](#input\_hvn\_cidr\_block) | (Optional) The IPv4 CIDR block value enables communication between your HVN and VPCs. | `string` | `null` | no |
+| <a name="input_hvn_region"></a> [hvn\_region](#input\_hvn\_region) | The AWS region where you want to deploy your HCP clusters. | `string` | n/a | yes |
 | <a name="input_id_length_limit"></a> [id\_length\_limit](#input\_id\_length\_limit) | Limit `id` to this many characters (minimum 6).<br>Set to `0` for unlimited length.<br>Set to `null` for keep the existing setting, which defaults to `0`.<br>Does not affect `id_full`. | `number` | `null` | no |
 | <a name="input_label_key_case"></a> [label\_key\_case](#input\_label\_key\_case) | Controls the letter case of the `tags` keys (label names) for tags generated by this module.<br>Does not affect keys of tags passed in via the `tags` input.<br>Possible values: `lower`, `title`, `upper`.<br>Default value: `title`. | `string` | `null` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | The order in which the labels (ID elements) appear in the `id`.<br>Defaults to ["namespace", "environment", "stage", "name", "attributes"].<br>You can omit any of the 6 labels ("tenant" is the 6th), but at least one must be present. | `list(string)` | `null` | no |
@@ -212,18 +198,20 @@ Available targets:
 | <a name="input_stage"></a> [stage](#input\_stage) | ID element. Usually used to indicate role, e.g. 'prod', 'staging', 'source', 'build', 'test', 'deploy', 'release' | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. `{'BusinessUnit': 'XYZ'}`).<br>Neither the tag keys nor the tag values will be modified by this module. | `map(string)` | `{}` | no |
 | <a name="input_tenant"></a> [tenant](#input\_tenant) | ID element \_(Rarely used, not included by default)\_. A customer identifier, indicating who this instance of a resource is for | `string` | `null` | no |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | AWS VPC ID | `string` | n/a | yes |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_hcp_hvn_cidr_block"></a> [hcp\_hvn\_cidr\_block](#output\_hcp\_hvn\_cidr\_block) | Hashicorp Cloud Platform CIDR block |
+| <a name="output_hcp_hvn_id"></a> [hcp\_hvn\_id](#output\_hcp\_hvn\_id) | Hashicorp Cloud Platform HVN ID |
 <!-- markdownlint-restore -->
 
 
 
 ## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/UGNS/terraform-aws-hcp-hvn)! (it helps us **a lot**)
+Like this project? Please give it a ★ on [our GitHub](https://github.com/ugns/terraform-aws-hcp-hvn)! (it helps us **a lot**)
 
 
 
@@ -231,26 +219,30 @@ Like this project? Please give it a ★ on [our GitHub](https://github.com/UGNS/
 
 Check out these related projects.
 
-- [terraform-null-label](https://github.com/cloudposse/terraform-null-label) - Terraform module designed to generate consistent names and tags for resources. Use terraform-null-label to implement a strict naming convention.
+- [terraform-hcp-hvn-peering-connection](https://github.com/ugns/terraform-hcp-hvn-peering-connection) - Terraform module designed to generate Hashicorp Cloud Platform Hashicorp Virtual Network connection using a peering connection.
+- [terraform-hcp-hvn-transit-gateway](https://github.com/ugns/terraform-hcp-hvn-transit-gateway) - Terraform module designed to generate Hashicorp Cloud Platform Hashicorp Virtual Network connection using a transit gateway.
+- [terraform-hcp-hvn-route](https://github.com/ugns/terraform-hcp-hvn-route) - Terraform module designed to generate Hashicorp Cloud Platform Hashicorp Virtual Network route back to through link to your AWS VPC.
 
 
 ## References
 
 For additional context, refer to some of these links.
 
+- [hashicorp-amazon-peering-hcp](https://learn.hashicorp.com/tutorials/cloud/amazon-peering-hcp?in=cloud/consul-cloud) - Peering an AWS VPC with HashiCorp Cloud Platform (HCP).
+- [terraform-provider-hcp](https://github.com/hashicorp/terraform-provider-hcp) - Terraform provider for HashiCorp Cloud Platform.
 
 
 ## Help
 
 **Got a question?** We got answers.
 
-File a GitHub [issue](https://github.com/UGNS/terraform-aws-hcp-hvn/issues).
+File a GitHub [issue](https://github.com/ugns/terraform-aws-hcp-hvn/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/UGNS/terraform-aws-hcp-hvn/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/ugns/terraform-aws-hcp-hvn/issues) to report any bugs or file feature requests.
 
 ### Developing
 
@@ -319,7 +311,7 @@ This project is maintained and funded by [UnderGrid Network Services][website]. 
 
 [![UnderGrid Network Services][logo]][website]
 
-We're a DevOps Professional Services company based in Kissimmee, FL.
+We're a DevOps Professional Services consulting firm based in Kissimmee, FL.
 
 Check out [our other projects][github].
 
@@ -336,19 +328,19 @@ Check out [our other projects][github].
 
 [![Beacon][beacon]][website]
 
-  [logo]: https://cloudposse.com/logo-300x69.svg
-  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=docs
-  [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=website
-  [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=cloudposse
-  [sweetops]: https://cpco.io/sweetops?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=sweetops
-  [github]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=github
-  [linkedin]: https://www.linkedin.com/company/undergrid-network-services/?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=linkedin
-  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=email
-  [terraform_modules]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=UGNS/terraform-aws-hcp-hvn&utm_content=terraform_modules
-  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-hcp-hvn&url=https://github.com/UGNS/terraform-aws-hcp-hvn
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-hcp-hvn&url=https://github.com/UGNS/terraform-aws-hcp-hvn
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/UGNS/terraform-aws-hcp-hvn
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/UGNS/terraform-aws-hcp-hvn
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/UGNS/terraform-aws-hcp-hvn
-  [share_email]: mailto:?subject=terraform-aws-hcp-hvn&body=https://github.com/UGNS/terraform-aws-hcp-hvn
-  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/UGNS/terraform-aws-hcp-hvn?pixel&cs=github&cm=readme&an=terraform-aws-hcp-hvn
+  [logo]: https://undergrid.net/undergrid-logo-300x88.png
+  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=docs
+  [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=website
+  [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=cloudposse
+  [sweetops]: https://cpco.io/sweetops?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=sweetops
+  [github]: https://github.com/ugns?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=github
+  [linkedin]: https://www.linkedin.com/company/undergrid-network-services/?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=linkedin
+  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=email
+  [terraform_modules]: https://github.com/ugns?utm_source=github&utm_medium=readme&utm_campaign=ugns/terraform-aws-hcp-hvn&utm_content=terraform_modules
+  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-hcp-hvn&url=https://github.com/ugns/terraform-aws-hcp-hvn
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-hcp-hvn&url=https://github.com/ugns/terraform-aws-hcp-hvn
+  [share_reddit]: https://reddit.com/submit/?url=https://github.com/ugns/terraform-aws-hcp-hvn
+  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/ugns/terraform-aws-hcp-hvn
+  [share_googleplus]: https://plus.google.com/share?url=https://github.com/ugns/terraform-aws-hcp-hvn
+  [share_email]: mailto:?subject=terraform-aws-hcp-hvn&body=https://github.com/ugns/terraform-aws-hcp-hvn
+  [beacon]: https://ga-beacon.cloudposse.com/UA-2819624-1/ugns/terraform-aws-hcp-hvn?pixel&cs=github&cm=readme&an=terraform-aws-hcp-hvn
