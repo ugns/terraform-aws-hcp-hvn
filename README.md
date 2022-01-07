@@ -131,7 +131,7 @@ Here's how to get started...
 ## Examples
 
 Here is an example of using this module:
-- [`examples/complete`](https://github.com/ugns/terraform-aws-hcp-hvn) - complete example of using this module
+- [`examples/complete`](https://github.com/ugns/terraform-aws-hcp-hvn/tree/main/examples/complete) - complete example of using this module
 
 
 
