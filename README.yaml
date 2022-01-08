@@ -41,9 +41,9 @@ related:
 
 # List any resources helpful for someone to get started. For example, link to the hashicorp documentation or AWS documentation.
 references:
-- name: "hashicorp-amazon-peering-hcp"
-  description: "Peering an AWS VPC with HashiCorp Cloud Platform (HCP)."
-  url: "https://learn.hashicorp.com/tutorials/cloud/amazon-peering-hcp?in=cloud/consul-cloud"
+- name: "peering-aws-vpc"
+  description: "Peering an AWS VPC with HashiCorp Cloud Platform."
+  url: "https://learn.hashicorp.com/tutorials/cloud/amazon-peering-hcp?in=cloud/networking"
 - name: "terraform-provider-hcp"
   description: "Terraform provider for HashiCorp Cloud Platform."
   url: "https://github.com/hashicorp/terraform-provider-hcp"
