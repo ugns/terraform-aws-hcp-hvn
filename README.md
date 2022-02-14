@@ -1,6 +1,6 @@
 
 <!-- markdownlint-disable -->
-# terraform-aws-hcp-hvn [![Latest Release](https://img.shields.io/github/release/UGNS/terraform-aws-hcp-hvn.svg)](https://github.com/UGNS/terraform-aws-hcp-hvn/releases/latest)
+# terraform-aws-hcp-hvn [![Latest Release](https://img.shields.io/github/release/ugns/terraform-aws-hcp-hvn.svg)](https://github.com/ugns/terraform-aws-hcp-hvn/releases/latest)
 <!-- markdownlint-restore -->
 
 [![UnderGrid Network Services][logo]](https://undergrid.net)
