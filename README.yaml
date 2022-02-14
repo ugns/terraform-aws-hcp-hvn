@@ -24,8 +24,8 @@ github_repo: "ugns/terraform-aws-hcp-hvn"
 # Badges to display
 badges:
 - name: "Latest Release"
-  image: "https://img.shields.io/github/release/UGNS/terraform-aws-hcp-hvn.svg"
-  url: "https://github.com/UGNS/terraform-aws-hcp-hvn/releases/latest"
+  image: "https://img.shields.io/github/release/ugns/terraform-aws-hcp-hvn.svg"
+  url: "https://github.com/ugns/terraform-aws-hcp-hvn/releases/latest"
 
 # List any related terraform modules that this module may be used with or that this module depends on.
 related:
