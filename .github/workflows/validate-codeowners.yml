@@ -7,10 +7,37 @@ on:
 jobs:
   validate-codeowners:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
     - name: "Checkout source code at current commit"
-      uses: actions/checkout@v2
-    - uses: mszostok/codeowners-validator@v0.5.0
+      uses: actions/checkout@v3
+
+    # Collect necessary secrets from Vault
+    - name: Vault Secrets
+      uses: hashicorp/vault-action@v2.4.0
+      with:
+        url: ${{ secrets.VAULT_ADDR }}
+        method: jwt
+        role: github-actions
+        path: github
+        secrets: |
+          secret/data/actions/github app_id | GH_APP_ID ;
+          secret/data/actions/github installation_id | GH_INSTALLATION_ID ;
+          secret/data/actions/github private_key | GH_PRIVATE_KEY
+
+    - name: Generate token
+      id: generate_token
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ env.GH_APP_ID }}
+        private_key: ${{ env.GH_PRIVATE_KEY }}
+        installation_id: ${{ env.GH_INSTALLATION_ID }}
+
+    - uses: mszostok/codeowners-validator@v0.7.1
       if: github.event.pull_request.head.repo.full_name == github.repository
       name: "Full check of CODEOWNERS"
       with:
@@ -19,8 +46,9 @@ jobs:
         #   checks: "files,syntax,owners,duppatterns"
         checks: "syntax,owners,duppatterns"
         # GitHub access token is required only if the `owners` check is enabled
-        github_access_token: "${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}"
-    - uses: mszostok/codeowners-validator@v0.5.0
+        github_access_token: "${{ steps.generate_token.outputs.token }}"
+
+    - uses: mszostok/codeowners-validator@v0.7.1
       if: github.event.pull_request.head.repo.full_name != github.repository
       name: "Syntax check of CODEOWNERS"
       with:

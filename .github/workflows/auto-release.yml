@@ -10,12 +10,39 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
-      # Get PR from merged commit to master
+      # Collect necessary secrets from Vault
+      - name: Vault Secrets
+        uses: hashicorp/vault-action@v2.4.0
+        with:
+          url: ${{ secrets.VAULT_ADDR }}
+          method: jwt
+          role: github-actions
+          path: github
+          secrets: |
+            secret/data/actions/github app_id | GH_APP_ID ;
+            secret/data/actions/github installation_id | GH_INSTALLATION_ID ;
+            secret/data/actions/github private_key | GH_PRIVATE_KEY
+
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ env.GH_APP_ID }}
+          private_key: ${{ env.GH_PRIVATE_KEY }}
+          installation_id: ${{ env.GH_INSTALLATION_ID }}
+
+     # Get PR from merged commit to master
       - uses: actions-ecosystem/action-get-merged-pull-request@v1
         id: get-merged-pull-request
         with:
-          github_token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
+          github_token: ${{ steps.generate_token.outputs.token }}
+ 
       # Drafts your next Release notes as Pull Requests are merged into "main"
       - uses: release-drafter/release-drafter@v5
         with:
@@ -23,4 +50,4 @@ jobs:
           prerelease: false
           config-name: auto-release.yml
         env:
-          GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}

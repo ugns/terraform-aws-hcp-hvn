@@ -17,8 +17,34 @@ jobs:
   update:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
     - uses: actions/checkout@v2
+
+    # Collect necessary secrets from Vault
+    - name: Vault Secrets
+      uses: hashicorp/vault-action@v2.4.0
+      with:
+        url: ${{ secrets.VAULT_ADDR }}
+        method: jwt
+        role: github-actions
+        path: github
+        secrets: |
+          secret/data/actions/github app_id | GH_APP_ID ;
+          secret/data/actions/github installation_id | GH_INSTALLATION_ID ;
+          secret/data/actions/github private_key | GH_PRIVATE_KEY
+
+    - name: Generate token
+      id: generate_token
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ env.GH_APP_ID }}
+        private_key: ${{ env.GH_PRIVATE_KEY }}
+        installation_id: ${{ env.GH_INSTALLATION_ID }}
 
     - name: Update readme
       shell: bash
@@ -36,7 +62,7 @@ jobs:
       # If a PR of the auto-update/readme branch is open, this action will just update it, not create a new PR.
       uses: ugns/actions/github/create-pull-request@1.0.0
       with:
-        token: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
+        token: ${{ steps.generate_token.outputs.token }}
         commit-message: Update README.md and docs
         title: Update README.md and docs
         body: |-
