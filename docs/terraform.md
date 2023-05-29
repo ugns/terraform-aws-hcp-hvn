@@ -4,13 +4,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_hcp"></a> [hcp](#requirement\_hcp) | 0.21.1 |
+| <a name="requirement_hcp"></a> [hcp](#requirement\_hcp) | 0.58.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hcp"></a> [hcp](#provider\_hcp) | 0.21.1 |
+| <a name="provider_hcp"></a> [hcp](#provider\_hcp) | 0.58.0 |
 
 ## Modules
 
@@ -23,7 +23,7 @@
 
 | Name | Type |
 |------|------|
-| [hcp_hvn.this](https://registry.terraform.io/providers/hashicorp/hcp/0.21.1/docs/resources/hvn) | resource |
+| [hcp_hvn.this](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn) | resource |
 
 ## Inputs
 
